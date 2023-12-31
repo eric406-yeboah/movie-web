@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    background-color: white;
+     font-family: "Poppins", sans-serif;
+}
+
+header{
+    background-color:black;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search {
+padding: 0.5rem 1rem;
+border-radius: 50px;
+border: 2px solid #22254b;
+background-color: transparent;
+font-family: inherit;
+color: #eee;
+font-size: 1rem;
+}
+
+.search::placeholder{
+    color: #afb2dc;
+}
+
+.search:focus{
+    outline: none;
+    background-color: #05082c;
+}
+
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.movie{
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    width: 280px;
+    background-color: #0d1dd2;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+
+.movie img{
+ width: 100%;
+ height: 100%;
+   
+}
+
+.movie-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    color: #eee;
+    letter-spacing: 0.5px;
+    align-items: center;
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    font-weight: bold;
+    margin-top: -3rem;
+}
+
+.movie-info span.green{
+    color: rgb(46, 194, 46);
+}
+.movie-info span.orange{
+ color: orange;
+}
+.movie-info span.red{
+    color: red;
+
+}
+
+
+
+.overview{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 1s ease-in;
+    max-width: 100%;
+    overflow: auto;
+
+
+
+}
+
+
+
+.movie:hover .overview{
+    transform: translateY(0);
+
+}
+
+.overview h4{
+    margin-top: 0;
+}
+
+#head{
+    margin-left: 1.5rem;
+    color: #dbac34;
+}
+
+#sign {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 10%;
+    margin-top: -3.8rem;
+    margin-left: 63rem;
+  }
+
+
+
+
+
+#signup {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 10%;
+    margin-top: -3.1rem;
+    margin-left: 70rem;
+  }
+  
+  .container,.container1 {
+    text-align: center;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#070d18 ;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+
+  
+  
+  .popup-content ,.popup-content1 {
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  #openPopupBtn{
+    border-radius: 5px;
+    padding: 7px 25px;
+    background-color: #dbac34;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+  }
+
+  #open{
+    border-radius: 5px;
+    padding: 7px 27px;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+  }
+
+  #ho{
+    text-decoration: none;
+    color: white;
+}
+
+#mo{
+    text-decoration: none;
+    color: white; 
+    margin-left: 0.5rem;
+}
+
+#li{
+    
+    text-decoration: none;
+    color: white; 
+    margin-left: 0.5rem;
+    
+}
+
+#link{
+    margin-left: 45rem;
+    margin-top: -4rem;
+    font-size: 25px;
+    width: 25%;
+    height: 10px;
+    
+}
+
+#searchForm{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    
+}
+
+#pupBtn{
+    border-radius: 5px;
+    padding: 7px 25px;
+}
+
+#search{
+    border-radius: 10px;
+    padding: 7px 40px;
+}
+
+
+#link a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+#link a:hover {
+    border-bottom: 2px solid #dbac34; 
+}
+
+.btn1{
+    padding: 15px 125px;
+    border-radius: 5px;
+}
+
+.btn2{
+    padding: 15px 113px;
+    border-radius: 5px;
+}
+
+.btn3{
+    padding: 15px 96px;
+    background-color: #dbac34;
+    border-radius: 5px;
+}
+
+.btn{
+    padding: 15px 120px;
+    border-radius: 5px;
+}
+
+#for{
+    margin-top: -2rem;
+    margin-left: 4rem;
+}
+
+#forr{
+    margin-top: -2rem;
+    margin-left: 2rem;
+}
+
+#inn{
+    margin-left: 13rem;
+    color: white;
+}
+
+#infocontainer{
+    height: 5vh;
+    color: #fff;
+  }
+
+  
+#lb_chk{
+    accent-color: #dbac34;
+}
+
+.look{
+    color: #dbac34 ;
+}
+
+#eric{
+    color: white;
+}
+
+
+
